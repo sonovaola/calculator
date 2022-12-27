@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>калькулятор</title>
+</head>
+<body>
+Створити скрипт який повинен виконувати наступне:
+
+питаємо у користувача, що він хоче зробити (add, sub, mult, div);
+питаємо у користувача перше число;
+запитуємо у користувача друге число;
+виводимо результат дії (add, sub, mult, div) з усіма операндами (Наприклад "2 + 3 = 5").
+
+	
+<script>
+
+	let operation = prompt('What mathematical operation do you want to do?(add / sub / mult / div)');
+	
+	let x = parseInt(+prompt("Enter the first number: "));
+
+	let y = parseInt(+prompt("enter the second number: "));
+		
+	if (Number.isNaN (x)){
+		alert ('Error: x is not number');
+	}
+	
+	else if(Number.isNaN (y)){
+		alert ('Error: y is not a number');
+		}
+		
+
+	if (operation == 'add') {
+		alert('Add: '+(x)+'+'+(y)+'='+(x+y));
+	} 
+	
+	else if (operation == 'sub') {
+		alert('Sub: '+(x)+'-'+(y)+'='+(x-y));
+	}
+ 
+	else if (operation == 'mult') {
+		alert('Mult: '+(x)+'*'+(y)+'='+(x*y));
+	}
+
+	else if (operation == 'div') {
+		alert('Div: '+(x)+'/'+(y)+'='+(x/y));
+	}
+	
+	else if(operation == '' || operation != 'add' ||operation != 'sub' || operation != 'mult' || operation != 'div') {
+		alert('Error: select the desired mathematical operation');
+	}
+
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+if (!Number.isNaN (x) && !Number.isNaN (y) {
+	console.log ('x+y = '+(x+y))
+	}
+let a = parseInt(+prompt("Введите первое число: "));
+
+let b = parseInt(+prompt("Введите второе число: "));
+
+let c = parseInt(+prompt("Введите третье число: "));
+
+if (!Number.isNaN (a) && !Number.isNaN (b) && !Number.isNaN (c)) {
+	console.log ('a+b+c = '+(a+b+c))
+	}
+
+
+let sum = Number (a) + Number(b) + Number(c);
+
+alert ("Среднее арифметическое ваших трех чисел:" + (sum / 3));
+
+	alert ("Результат суммы ваших двух чисел: Number (a) + Number(b) ="+();
+	alert ("Результат суммы ваших двух чисел: Number (a) - Number(b) ="+();
+	alert ("Результат суммы ваших двух чисел: Number (a) * Number(b) ="+();
+	alert ("Результат суммы ваших двух чисел: Number (a) / Number(b) ="+();
+	
